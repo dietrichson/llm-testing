@@ -34,4 +34,14 @@ Suspecting a typo I renamed this file to index.qmd. This had no effect.
 
 ## Requirements
 
-On the off-chance that "something went wrong" due to the lack of requirements.txt I created this file in the root level. (Terminal:`touch requirements.txt`)
+On the off-chance that "something went wrong" due to the lack of requirements.txt I created this file in the root level. (Terminal:`touch requirements.txt`). This deployment took substantially longer, but the end result was essentially similar.
+
+## Deploying pure html
+
+Since I render this file and then deploy it I tried that as well. Rendering the file gave me a warning about the requirements.txt file:
+
+```         
+There is a requirements.txt file in this directory. Is this for a venv that you need to restore?
+```
+
+I was also asked to install jupyter, which I did with `python3 -m pip install jupyter`.
