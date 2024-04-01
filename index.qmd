@@ -10,7 +10,7 @@ jupyter: python3
 
 The purpose of this document of to memorialize my first impressions of Connect cloud.
 
-## Sign up an connecting
+## Sign up and connecting
 
 The sign-up is easy and seamless. I signed up using my GitHub account. I then signed in to my posit.cloud to create, among other things, this document. Unfortunately this signed me in to a posit-cloud account associated with my github-handle, which is different from the one I use on a regular basis with the google-login. This is an issue which I have encountered before and have had to work-around as my shiny.io and posit.cloud accounts are on "separate identities" yet need access to the same private repository.
 
@@ -45,3 +45,9 @@ There is a requirements.txt file in this directory. Is this for a venv that you 
 ```
 
 I was also asked to install jupyter, which I did with `python3 -m pip install jupyter`.
+
+Deploying this as pure html worked.
+
+## Redeploying as quarto
+
+I tried redeploying the project using `index.qmd` as the entry-point file.
