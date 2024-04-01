@@ -58,3 +58,9 @@ This deployment worked. Since I hadn't isolated the varibles I removed the `requ
 ## Initial conclusions
 
 It might seem that the issues I was faced with were due to the requirements file that needed to be present. This needs to be properly documented and, likely, the creation of this file needs to somehow automated - along the lines of one-button publishing to shiny.io.
+
+## Post-scriptum
+
+I tried to re-publish this page in pure HTML, and a prior version showed up when I hit the "redeploy" button. I will attempt republishing from scratch.
+
+Here I suspect perhaps a caching-issue? Surely re-deploy must mean get the latest version from the repo?
