@@ -20,6 +20,14 @@ As a side-effect I also have one shiny.io account pero google-account (6ish I as
 
 The repo I am starting with contains two notebooks. They were created as a "jupyter project" in posit.cloud, when I check out the repo in a fresh posit.cloud and attempt to open the notebook I don't get the notebook interface (editor), but rather the underlying json-like structure. This can be confusing.
 
-### Adding requirements
+## First attempt at publishing
+
+Since this document does not contain any code, my intuition was that I could publish it as is. My first attempt was, alas, unsuccessful.
+
+![](images/Screenshot 2024-04-01 09.40.20.png)
 
 ## 
+
+Given the rather non-descript error message I was unable to diagnose the problem.
+
+Suspecting a typo I renamed this file to index.qmd
