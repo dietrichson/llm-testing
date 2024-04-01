@@ -1,0 +1,25 @@
+---
+title: "Connect Cloud- First Impressions"
+author: "Aleksander Dietrichson"
+format: html
+editor: visual
+jupyter: python3
+---
+
+## Purpose
+
+The purpose of this document of to memorialize my first impressions of Connect cloud.
+
+## Sign up an connecting
+
+The sign-up is easy and seamless. I signed up using my GitHub account. I then signed in to my posit.cloud to create, among other things, this document. Unfortunately this signed me in to a posit-cloud account associated with my github-handle, which is different from the one I use on a regular basis with the google-login. This is an issue which I have encountered before and have had to work-around as my shiny.io and posit.cloud accounts are on "separate identities" yet need access to the same private repository.
+
+As a side-effect I also have one shiny.io account pero google-account (6ish I assume), which were opened by accident. Probably not a huge strain on resources, but can be annoying sometimes.
+
+## Deploying a repo with jupyter notebooks
+
+The repo I am starting with contains two notebooks. They were created as a "jupyter project" in posit.cloud, when I check out the repo in a fresh posit.cloud and attempt to open the notebook I don't get the notebook interface (editor), but rather the underlying json-like structure. This can be confusing.
+
+### Adding requirements
+
+## 
