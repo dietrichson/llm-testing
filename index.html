@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Aleksander Dietrichson">
+<meta name="dcterms.date" content="2024-04-01">
 
 <title>Connect Cloud- First Impressions</title>
 <style>
@@ -60,6 +61,12 @@ ul.task-list li input[type="checkbox"] {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 1, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -73,8 +80,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
 <p>The purpose of this document of to memorialize my first impressions of Connect cloud.</p>
 </section>
-<section id="sign-up-an-connecting" class="level2">
-<h2 class="anchored" data-anchor-id="sign-up-an-connecting">Sign up an connecting</h2>
+<section id="sign-up-and-connecting" class="level2">
+<h2 class="anchored" data-anchor-id="sign-up-and-connecting">Sign up and connecting</h2>
 <p>The sign-up is easy and seamless. I signed up using my GitHub account. I then signed in to my posit.cloud to create, among other things, this document. Unfortunately this signed me in to a posit-cloud account associated with my github-handle, which is different from the one I use on a regular basis with the google-login. This is an issue which I have encountered before and have had to work-around as my shiny.io and posit.cloud accounts are on “separate identities” yet need access to the same private repository.</p>
 <p>As a side-effect I also have one shiny.io account pero google-account (6ish I assume), which were opened by accident. Probably not a huge strain on resources, but can be annoying sometimes.</p>
 </section>
@@ -101,6 +108,16 @@ ul.task-list li input[type="checkbox"] {
 <p>Since I render this file and then deploy it I tried that as well. Rendering the file gave me a warning about the requirements.txt file:</p>
 <pre><code>There is a requirements.txt file in this directory. Is this for a venv that you need to restore?</code></pre>
 <p>I was also asked to install jupyter, which I did with <code>python3 -m pip install jupyter</code>.</p>
+<p>Deploying this as pure html worked.</p>
+</section>
+<section id="redeploying-as-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="redeploying-as-quarto">Redeploying as quarto</h2>
+<p>I tried redeploying the project using <code>index.qmd</code> as the entry-point file. The thinking was that since it was defined as a jupyter document and I had now installed jupyter this might make a difference. I also added the line <code>python</code> to the <code>requirements.txt</code>.</p>
+<p>This deployment worked. Since I hadn’t isolated the varibles I removed the <code>requirements.txt</code> which resulted in a unsuccessful deployment. Adding the file back <strong>DID NOT</strong> resolve the issue. So I am wither missing something here, or there is a point of instability in the workflow. This is difficult to assess without log-files.</p>
+</section>
+<section id="initial-conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="initial-conclusions">Initial conclusions</h2>
+<p>It might seem that the issues I was faced with were due to the requirements file that needed to be present. This needs to be properly documented and, likely, the creation of this file needs to somehow automated - along the lines of one-button publishing to shiny.io.</p>
 </section>
 
 </main>

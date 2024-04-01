@@ -2,6 +2,7 @@
 title: "Connect Cloud- First Impressions"
 author: "Aleksander Dietrichson"
 format: html
+date: "April 1, 2024"
 editor: visual
 jupyter: python3
 ---
@@ -52,7 +53,7 @@ Deploying this as pure html worked.
 
 I tried redeploying the project using `index.qmd` as the entry-point file. The thinking was that since it was defined as a jupyter document and I had now installed jupyter this might make a difference. I also added the line `python` to the `requirements.txt`.
 
-This deployment worked. Since I hadn't isolated the varibles I removed the `requirements.txt` which resulted in a unsuccessful deployment. Adding the file back resolved the issue.
+This deployment worked. Since I hadn't isolated the varibles I removed the `requirements.txt` which resulted in a unsuccessful deployment. Adding the file back **DID NOT** resolve the issue. So I am wither missing something here, or there is a point of instability in the workflow. This is difficult to assess without log-files.
 
 ## Initial conclusions
 
