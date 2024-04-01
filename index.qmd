@@ -50,4 +50,10 @@ Deploying this as pure html worked.
 
 ## Redeploying as quarto
 
-I tried redeploying the project using `index.qmd` as the entry-point file. The thinking was that since it was defined as a jupyter document and I had now installed jupyter this might make a difference.
+I tried redeploying the project using `index.qmd` as the entry-point file. The thinking was that since it was defined as a jupyter document and I had now installed jupyter this might make a difference. I also added the line `python` to the `requirements.txt`.
+
+This deployment worked. Since I hadn't isolated the varibles I removed the `requirements.txt` which resulted in a unsuccessful deployment. Adding the file back resolved the issue.
+
+## Initial conclusions
+
+It might seem that the issues I was faced with were due to the requirements file that needed to be present. This needs to be properly documented and, likely, the creation of this file needs to somehow automated - along the lines of one-button publishing to shiny.io.
