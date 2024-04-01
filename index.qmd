@@ -50,4 +50,4 @@ Deploying this as pure html worked.
 
 ## Redeploying as quarto
 
-I tried redeploying the project using `index.qmd` as the entry-point file.
+I tried redeploying the project using `index.qmd` as the entry-point file. The thinking was that since it was defined as a jupyter document.
